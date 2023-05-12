@@ -32,24 +32,24 @@
                   <a class="nav-link" href="index.html" style="color:white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Home</a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link" href="admin_dashboard.php" style="color:white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Dashboard</a>
+                  <a class="nav-link" href="admin_dashboard.HTML" style="color:white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Dashboard</a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link" href="user_suggestion.php"  style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Suggestions</a>
+                  <a class="nav-link" href="user_suggestion.html"  style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Suggestions</a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link" href="show_contact.php"  style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Contact</a>
+                  <a class="nav-link" href="show_contact.html"  style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Contact</a>
                 </li>
               
                 <li class="nav-item">
-                  <a class="nav-link" href="user_details_year.php" style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Users</a>
+                  <a class="nav-link" href="user_details_year.html" style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Users</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="user_cand_year.php" style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Candidates</a>
+                  <a class="nav-link" href="user_cand_year.html" style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Candidates</a>
                 </li>
               
                 <li class="nav-item" >
-                  <a class="nav-link" href="logout.php"  style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Logout</a>
+                  <a class="nav-link" href="logout.html"  style="color: white; font-weight: 600; text-align: center; font-size: 18px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">Logout</a>
                 </li>
               
               </ul>
@@ -61,19 +61,7 @@
             <div class="row">
                 <div class="col-md-12" >
 
-            
-	<?php session_start();
-
-
-	include('dbConnect.php');
-	$sql = "select * from candidate_2nd order by id desc";
-
-	$stmt = $pdo->prepare($sql);
-	$stmt->execute();
-
-	$rs =  $stmt->fetchAll();
-
-	echo "
+    
 		<table border='2'>
 			<tr>
 				<th>Sno.</th>
